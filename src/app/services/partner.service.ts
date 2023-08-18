@@ -16,6 +16,10 @@ export class PartnerService {
   }
 
   GetPartnerById(id: number): Observable<partner[]> {
-    return this.http.get<partner[]>(environment.APIURL + "partner/" + id)
+    return this.http.get<partner[]>(environment.APIURL + "?id=" + id)
+  }
+
+  Save(item: partner):Observable<boolean>{
+    return this.http.post<boolean>(environment.APIURL, item)
   }
 }

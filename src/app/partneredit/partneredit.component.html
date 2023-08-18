@@ -1,0 +1,9 @@
+<p>partneredit works!</p>
+
+<div *ngIf="item">
+    <label>Name:</label><input [(ngModel)]="item.name"/><br/>
+    <label>Phone:</label><input [(ngModel)]="item.phone"/><br/>
+    <label>City:</label><input [(ngModel)]="item.city"/><br/>
+    <button (click)="savePartner()" class="btn btn-primary">Mentés</button>
+</div>
+<div *ngIf="!item"> Adatok betöltése ...</div>

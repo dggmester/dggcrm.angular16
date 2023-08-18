@@ -5,15 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PartnerlistComponent } from './partnerlist/partnerlist.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PartnereditComponent } from './partneredit/partneredit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PartnerlistComponent
+    PartnerlistComponent,
+    PartnereditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule
   ],
   providers: [],
